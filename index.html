@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JS Functions</title>
+    <style>
+        body{
+          background-image: linear-gradient(yellow,rgb(66, 242, 66));
+        }
+        pre{
+          font-size: larger; 
+          color: brown; 
+        }
+  
+        b{
+          font-size: larger;
+          color: darkblue;
+          text-shadow: 5px rgb(105, 17, 17);
+        }
+  
+        div{
+          border: 2px solid black;
+          border-radius: 5px;
+          margin-bottom: auto;
+        }
+      </style>
+</head>
+<body>
+    <h1>JS - 10 Functions Handson </h1>
+    <br>
+    <div>
+        <h2>Ques.1 Create one function with zero parameter having a console statement; </h2>
+        <pre>
+            let hello = () =>{
+                return "hello world";
+            }
+            console.log(hello())
+        </pre>
+    </div>
+    <br>
+    <div>
+        <h2>Ques.2  Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</h2>
+        <pre>
+            let sum=(a,b) => {
+                return(a+b)
+            }
+            console.log(sum(3,4))
+        </pre>
+    </div>
+    <br>
+    <div>
+        <h2>Ques.3 Create one arrow function. </h2>
+        <pre>
+        let arrowfunction = () => {
+            console.log('This is an arrow function example');
+        }
+        arrowfunction();
+        </pre>
+    </div>
+    <br>
+
+    <div>
+        <h2>Ques.4 Sample Question 1  </h2>
+        <pre>
+            var x = 21;
+            var girl = function () {
+                console.log(x);
+                var x = 20;
+            };
+            girl ();
+        </pre>
+    </div>
+    <br>
+
+    <div>
+        <h2>Ques. 5 Sample Question 2 </h2>
+        <pre>
+            var x = 21;
+            girl ();
+            console.log(x)
+            function girl() {
+                console.log(x);
+                var x = 20;
+            };
+
+        </pre>
+    </div><br>
+     
+    <div>
+        <h2>Ques. 6 Sample Question 3 </h2>
+        <pre>
+            var x = 21;
+            a();
+            b();
+            function a() {
+            
+            x = 20;
+            console.log(x);
+        };
+        function b() {
+        
+        x = 40;
+        console.log(x);
+     };
+     </pre>
+    </div>
+    <br>
+
+    <div>
+        <h2>Ques.7  Write a function that accepts parameter n and returns factorial of n  </h2>
+        <pre>
+            fact = 0 ;
+            function Factorial (n){
+                if (n === 1){
+                    fact =  1;
+                }
+                else {
+                    fact = n ;
+                    for ( let i = n ; i >1 ; i--){
+                            fact = fact * (i-1);
+                    }
+                }
+                return fact;
+            }
+            console.log(Factorial(5));
+        </pre>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
